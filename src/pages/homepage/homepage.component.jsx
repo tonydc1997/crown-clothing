@@ -3,7 +3,7 @@ import './homepage.styles.scss';
 
 const HomePage = () => (
   <div className="homepage">
-    <div className="menu">
+    <div className="directory__menu">
       <div className="menu__item">
         <div className="content">
           <h1 className="title">HATS</h1>
