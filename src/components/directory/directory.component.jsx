@@ -1,9 +1,9 @@
 import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
-import hat from '../../images/hat3.jpg';
-import jacket from '../../images/jacket2.jpg';
+import hat from '../../images/hat.jpg';
+import jacket from '../../images/jacket.jpg';
 import shoes from '../../images/sneakers.jpg';
-import man from '../../images/man5.jpg';
+import man from '../../images/man.jpg';
 import woman from '../../images/woman.jpg';
 import './directory.styles.scss';
 
