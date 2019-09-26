@@ -1,5 +1,10 @@
 import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
+import hat from '../../images/hat3.jpg';
+import jacket from '../../images/jacket2.jpg';
+import shoes from '../../images/sneakers.jpg';
+import man from '../../images/man5.jpg';
+import woman from '../../images/woman.jpg';
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -10,32 +15,32 @@ class Directory extends React.Component {
       sections: [
         {
           title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          imageUrl: `${hat}`,
           id: 1,
           linkUrl: 'shop/hats',
         },
         {
           title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          imageUrl: `${jacket}`,
           id: 2,
           linkUrl: 'shop/jackets',
         },
         {
           title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          imageUrl: `${shoes}`,
           id: 3,
           linkUrl: 'shop/sneakers',
         },
         {
           title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          imageUrl: `${woman}`,
           size: 'large',
           id: 4,
           linkUrl: 'shop/womens',
         },
         {
           title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          imageUrl: `${man}`,
           size: 'large',
           id: 5,
           linkUrl: 'shop/mens',
