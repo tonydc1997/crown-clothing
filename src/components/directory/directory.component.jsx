@@ -1,10 +1,10 @@
 import React from 'react';
 import MenuItem from '../menu-item/menu-item.component';
-import hat from '../../images/hat.jpg';
-import jacket from '../../images/jacket.jpg';
-import shoes from '../../images/sneakers.jpg';
-import man from '../../images/man.jpg';
-import woman from '../../images/woman.jpg';
+import hat from '../../assets/images/hat.jpg';
+import jacket from '../../assets/images/jacket.jpg';
+import shoes from '../../assets/images/sneakers.jpg';
+import man from '../../assets/images/man.jpg';
+import woman from '../../assets/images/woman.jpg';
 import './directory.styles.scss';
 
 class Directory extends React.Component {
