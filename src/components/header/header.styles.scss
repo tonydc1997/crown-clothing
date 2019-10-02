@@ -6,9 +6,45 @@
   margin-bottom: 25px;
 
   .logo-container {
-    height: 100%;
+    text-align: center;
+    height: 50%;
+    left: 3.5rem;
+    top: 1rem;
     width: 70px;
-    padding: 25px;
+    padding: 15px 15px;
+    position: relative;
+  }
+
+  .logo-container::before,
+  .logo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #2d2d2d;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+  }
+
+  .logo-container::before {
+    left: -8px;
+    transform-origin: center top;
+  }
+
+  .logo-container:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+  }
+
+  .logo-container::after {
+    right: -8px;
+    transform-origin: center bottom;
+  }
+
+  .logo-container:hover::after {
+    transform-origin: center top;
+    transform: scaleY(1);
   }
 
   .options {
