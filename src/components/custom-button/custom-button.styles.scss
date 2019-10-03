@@ -1,0 +1,47 @@
+.custom-button {
+  text-align: center;
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px;
+  font-size: 15px;
+  background-color: #2d2d2d;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: 1px solid black;
+  cursor: pointer;
+
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+
+  &:hover {
+    // background-color: white;
+    color: #2d2d2d;
+    border: 1px solid black;
+  }
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+}
