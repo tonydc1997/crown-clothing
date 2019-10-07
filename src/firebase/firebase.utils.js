@@ -12,3 +12,5 @@ const config = {
   appId: '1:242184251880:web:65b711a67d0979085edc5d',
   measurementId: 'G-X5F3SL7NS4',
 };
+
+firebase.initializeApp(config);
