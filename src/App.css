@@ -6,3 +6,7 @@ a {
   text-decoration: none;
   color: #171717;
 }
+
+* {
+  box-sizing: border-box;
+}
