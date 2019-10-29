@@ -15,7 +15,9 @@ const config = {
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
-  console.log(firestore.doc('users/2398yr87q3rf'));
+
+  const userRef = firestore.doc('users/2398yr87q3rf');
+  console.log();
 };
 
 firebase.initializeApp(config);
