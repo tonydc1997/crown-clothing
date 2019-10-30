@@ -16,6 +16,7 @@ class SignUp extends React.Component {
       confirmPassword: '',
     };
   }
+
   handleSubmit = async event => {
     event.preventDefault();
     const { displayName, email, password, confirmPassword } = this.state;
@@ -23,6 +24,9 @@ class SignUp extends React.Component {
       alert("Passwords don't match.");
       return;
     }
+
+    try {
+    } catch (err) {}
   };
 
   render() {
