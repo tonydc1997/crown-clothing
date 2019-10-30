@@ -30,7 +30,7 @@ class SignUp extends React.Component {
         email,
         password
       );
-      createUserProfileDocument(user, { displayName });
+      await createUserProfileDocument(user, { displayName });
     } catch (err) {
       console.log(err);
     }
