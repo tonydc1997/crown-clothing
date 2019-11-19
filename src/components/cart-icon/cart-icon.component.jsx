@@ -3,8 +3,8 @@ import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 import './cart-icon.style.scss';
 
 const CartIcon = () => (
-  <div>
-    <ShoppingIcon />
-    <span>0</span>
+  <div className="cart-icon">
+    <ShoppingIcon className="shopping-icon" />
+    <span className="item-count">0</span>
   </div>
 );
