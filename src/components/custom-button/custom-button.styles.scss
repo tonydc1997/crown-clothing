@@ -7,51 +7,57 @@
   line-height: 50px;
   padding: 0 35px;
   font-size: 15px;
-  background-color: #2d2d2d;
-  color: white;
+  background-image: linear-gradient(
+    to top,
+    #232323,
+    #303030,
+    #3d3d3d,
+    #4b4b4b,
+    #5a5959
+  );
+  color: #e7e7e7;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed';
   font-weight: bolder;
-  border: 1px solid black;
+  border: 1px solid #2e2e2e;
   cursor: pointer;
 
-  z-index: 1;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.4s ease-in-out;
-
   &:hover {
-    // background-color: white;
-    color: #2d2d2d;
+    background-image: linear-gradient(
+      to top,
+      #191919,
+      #252525,
+      #313131,
+      #3e3e3e,
+      #4c4c4c
+    );
+    color: white;
     border: 1px solid black;
-  }
-
-  &::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: white;
-    transform-origin: center;
-    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.45s ease-in-out;
-  }
-
-  &:hover::before {
-    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+    font-weight: bold;
   }
 
   &.google-sign-in {
-    background-color: #4285f4;
-    color: white;
+    background-image: linear-gradient(
+      to bottom,
+      #4285f4,
+      #3f82f1,
+      #3c7fee,
+      #387deb,
+      #357ae8
+    );
+    border: 1px solid #357ae8;
+    color: #f0f0f0;
 
     &:hover {
-      color: #357ae8;
-      border: 1px solid black;
+      background-image: linear-gradient(
+        to bottom,
+        #4285f4,
+        #3e80eb,
+        #3b7ae3,
+        #3775da,
+        #3370d2
+      );
+      color: white;
     }
   }
 }
