@@ -9,7 +9,7 @@ const CollectionItem = ({ id, name, imageUrl, price }) => (
       <span className="name">{name}</span>
       <span className="price">{price}</span>
     </div>
-    <CustomButton>ADD TO CART</CustomButton>
+    <CustomButton inverted>ADD TO CART</CustomButton>
   </div>
 );
 
