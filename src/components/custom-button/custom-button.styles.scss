@@ -21,6 +21,8 @@
   font-weight: bolder;
   border: 1px solid #2e2e2e;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     background-image: linear-gradient(
