@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import CustomButton from '../custom-button/custom-button.component';
 import { addItem } from '../../redux/cart/cart.actions';
 import './collection-item.styles.scss';
-import { dispatch } from '../../../../../../../Library/Caches/typescript/3.6/node_modules/rxjs/internal/observable/pairs';
 
 const CollectionItem = ({ id, name, imageUrl, price }) => (
   <div className="collection-item">
@@ -20,4 +19,4 @@ const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItem(item)),
 });
 
-export default CollectionItem;
+export default connect(null, mapDispatchToProps)(CollectionItem);
