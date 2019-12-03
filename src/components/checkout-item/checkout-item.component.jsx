@@ -12,3 +12,5 @@ const CheckoutItem = ({ cartItem: { name, imageUrl, quantity, price } }) => (
     <div className="remove-button">&#10005;</div>
   </div>
 );
+
+export default CheckoutItem;
