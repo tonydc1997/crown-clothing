@@ -5,6 +5,7 @@ import {
   selectCartItems,
   selectCartTotal,
 } from '../../redux/cart/cart.selectors';
+import { toggleCartHidden } from '../../redux/cart/cart.actions';
 import './checkout.styles.scss';
 
 const CheckoutPage = ({ cartItems, total }) => (
