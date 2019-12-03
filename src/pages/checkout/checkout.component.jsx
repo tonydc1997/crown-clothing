@@ -26,4 +26,8 @@ const CheckoutPage = () => (
   </div>
 );
 
+const mapStateToProps = createStructuredSelector({
+  cartItems: selectCartItems,
+});
+
 export default CheckoutPage;
