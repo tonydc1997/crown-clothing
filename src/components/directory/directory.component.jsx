@@ -1,70 +1,28 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectDirectorySections } from '../../redux/directory/directory.selectors';
 import MenuItem from '../menu-item/menu-item.component';
-import hat from '../../assets/images/hat.jpg';
-import jacket from '../../assets/images/jacket.jpg';
-import shoes from '../../assets/images/sneakers.jpg';
-import man from '../../assets/images/man.jpg';
-import woman from '../../assets/images/woman.jpg';
 import './directory.styles.scss';
 
-class Directory extends React.Component {
-  constructor() {
-    super();
+const Directory = ({ sections }) => {
+  return (
+    <div className="directory__menu">
+      {sections.map(({ id, title, imageUrl, size, linkUrl }) => (
+        <MenuItem
+          key={id}
+          title={title}
+          imageUrl={imageUrl}
+          size={size}
+          linkUrl={linkUrl}
+        />
+      ))}
+    </div>
+  );
+};
 
-    this.state = {
-      sections: [
-        {
-          title: 'hats',
-          imageUrl: `${hat}`,
-          id: 1,
-          linkUrl: 'shop/hats',
-        },
-        {
-          title: 'jackets',
-          imageUrl: `${jacket}`,
-          id: 2,
-          linkUrl: 'shop/jackets',
-        },
-        {
-          title: 'sneakers',
-          imageUrl: `${shoes}`,
-          id: 3,
-          linkUrl: 'shop/sneakers',
-        },
-        {
-          title: 'womens',
-          imageUrl: `${woman}`,
-          size: 'large',
-          id: 4,
-          linkUrl: 'shop/womens',
-        },
-        {
-          title: 'mens',
-          imageUrl: `${man}`,
-          size: 'large',
-          id: 5,
-          linkUrl: 'shop/mens',
-        },
-      ],
-    };
-  }
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections,
+});
 
-  render() {
-    const { sections } = this.state;
-    return (
-      <div className="directory__menu">
-        {sections.map(({ id, title, imageUrl, size, linkUrl }) => (
-          <MenuItem
-            key={id}
-            title={title}
-            imageUrl={imageUrl}
-            size={size}
-            linkUrl={linkUrl}
-          />
-        ))}
-      </div>
-    );
-  }
-}
-
-export default Directory;
+export default connect(mapStateToProps)(Directory);
