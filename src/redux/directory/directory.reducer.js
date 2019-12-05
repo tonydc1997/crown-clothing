@@ -1,33 +1,39 @@
+import hat from '../../assets/images/hat.jpg';
+import jacket from '../../assets/images/jacket.jpg';
+import sneakers from '../../assets/images/sneakers.jpg';
+import woman from '../../assets/images/woman.jpg';
+import man from '../../assets/images/man.jpg';
+
 const INITIAL_STATE = {
   sections: [
     {
       title: 'hats',
-      imageUrl: '../../assets/images/hat.jpg',
+      imageUrl: `${hat}`,
       id: 1,
       linkUrl: 'shop/hats',
     },
     {
       title: 'jackets',
-      imageUrl: '../../assets/images/jacket.jpg',
+      imageUrl: `${jacket}`,
       id: 2,
       linkUrl: 'shop/jackets',
     },
     {
       title: 'sneakers',
-      imageUrl: '../../assets/images/sneakers.jpg',
+      imageUrl: `${sneakers}`,
       id: 3,
       linkUrl: 'shop/sneakers',
     },
     {
       title: 'womens',
-      imageUrl: '../../assets/images/woman.jpg',
+      imageUrl: `${woman}`,
       size: 'large',
       id: 4,
       linkUrl: 'shop/womens',
     },
     {
       title: 'mens',
-      imageUrl: '../../assets/images/man.jpg',
+      imageUrl: `${man}`,
       size: 'large',
       id: 5,
       linkUrl: 'shop/mens',
