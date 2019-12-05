@@ -21,4 +21,8 @@ const Directory = ({ sections }) => {
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections,
+});
+
 export default Directory;
