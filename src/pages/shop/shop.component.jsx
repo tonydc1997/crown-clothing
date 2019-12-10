@@ -4,8 +4,4 @@ import './shop.styles.scss';
 
 const ShopPage = ({ collections }) => <div className="shop"></div>;
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectCollections,
-});
-
-export default connect(mapStateToProps)(ShopPage);
+export default ShopPage;
