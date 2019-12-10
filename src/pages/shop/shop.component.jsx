@@ -13,4 +13,8 @@ const ShopPage = ({ collections }) => (
   </div>
 );
 
+const mapStateToProps = createStructuredSelector({
+  collections: selectShopItems,
+});
+
 export default ShopPage;
