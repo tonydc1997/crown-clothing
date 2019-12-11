@@ -3,7 +3,7 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 import './collection.styles.scss';
 
 const CollectionPage = () => (
-  <div className="collection">
+  <div className="collection-page">
     <h2>COLLECTION</h2>
   </div>
 );
