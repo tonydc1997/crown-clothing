@@ -7,6 +7,7 @@ import './shop.styles.scss';
 const ShopPage = ({ match }) => (
   <div className="shop">
     <Route exact path={`${match.path}`} component={CollectionsOverview} />
+    <Route path={`${match.path}/:categoryId`} component={CategoryPage} />
   </div>
 );
 
