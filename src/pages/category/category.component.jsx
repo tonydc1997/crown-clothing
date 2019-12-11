@@ -7,3 +7,5 @@ const CategoryPage = () => (
     <h2>CATEGORY</h2>
   </div>
 );
+
+export default CategoryPage;
