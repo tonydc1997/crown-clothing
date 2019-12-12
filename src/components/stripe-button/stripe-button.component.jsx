@@ -24,3 +24,5 @@ const StripeButton = ({ price }) => {
     />
   );
 };
+
+export default StripeButton;
