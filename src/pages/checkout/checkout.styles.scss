@@ -14,7 +14,7 @@
     border-bottom: 2px solid hsl(210, 23%, 95%);
 
     .header-block {
-      font-weight: bold;
+      color: #102a43;
       font-size: 18px;
       text-transform: capitalize;
       width: 23%;
@@ -29,6 +29,12 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+    color: #829ab1;
+
+    .total-price {
+      font-weight: 700;
+      color: #243b53;
+    }
   }
 
   button {
