@@ -1,9 +1,8 @@
-$sub-color: grey;
-$main-color: black;
+$sub-color: #627d98;
+$main-color: #102a43;
 
-@mixin shrinkLabel {
+@mixin focusLabel {
   top: -14px;
-  font-size: 12px;
   color: $main-color;
 }
 
@@ -29,7 +28,8 @@ $main-color: black;
     }
 
     &:focus ~ .form-input-label {
-      @include shrinkLabel();
+      @include focusLabel();
+      font-weight: 700;
     }
   }
 
@@ -48,7 +48,7 @@ $main-color: black;
     transition: 300ms ease all;
 
     &.shrink {
-      @include shrinkLabel();
+      @include focusLabel();
     }
   }
 }

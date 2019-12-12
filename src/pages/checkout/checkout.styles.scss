@@ -11,10 +11,10 @@
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 2px solid hsl(210, 23%, 95%);
 
     .header-block {
-      font-weight: bold;
+      color: #102a43;
       font-size: 18px;
       text-transform: capitalize;
       width: 23%;
@@ -29,5 +29,24 @@
     margin-top: 30px;
     margin-left: auto;
     font-size: 36px;
+    color: #829ab1;
+
+    .total-price {
+      font-size: 48px;
+      font-weight: 700;
+      color: #243b53;
+    }
+  }
+
+  button {
+    margin-left: auto;
+    margin-top: 50px;
+  }
+
+  .test-warning {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #eb1313;
   }
 }
