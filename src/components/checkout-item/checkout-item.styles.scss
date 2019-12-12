@@ -20,6 +20,9 @@
   .quantity,
   .price {
     width: 23%;
+    font-weight: 700;
+    font-size: 24px;
+    color: #243b53;
   }
 
   .quantity {
@@ -27,6 +30,7 @@
 
     .arrow {
       cursor: pointer;
+      color: #cdd9e5;
     }
 
     .value {
@@ -37,5 +41,6 @@
   .remove-button {
     padding-left: 12px;
     cursor: pointer;
+    color: #829ab1;
   }
 }
