@@ -8,7 +8,13 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { auth } from '../../firebase/firebase.utils';
-import './header.styles.scss';
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionLink,
+  OptionDiv,
+} from './header.styles';
 
 const Header = ({ currentUser, hidden }) => (
   <div className="header">
