@@ -1,6 +1,47 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
+const OptionContainerStyles = css`
+  color: #102a43;
+  font-size: 18px;
+  margin-right: 1rem;
+  padding: 10px 15px;
+  position: relative;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #2d2d2d;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+
+  &::before {
+    top: 0;
+    transform-origin: center right;
+  }
+
+  &:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+
+  &::after {
+    bottom: 0;
+    transform-origin: center left;
+  }
+
+  &:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+`;
+
 export const HeaderContainer = styled.div`
   height: 70px;
   width: 100%;
