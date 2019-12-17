@@ -1,5 +1,10 @@
 import styled, { css } from 'styled-components';
 
+const styledSpan = css`
+  color: #243b53;
+  font-size: 20px;
+`;
+
 export const CollectionItemContainer = styled.div`
   width: 20vw;
   display: flex;
