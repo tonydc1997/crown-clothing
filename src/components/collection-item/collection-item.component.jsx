@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/cart.actions';
+import CustomButton from '../custom-button/custom-button.component';
 import {
   CollectionItemContainer,
   BackgroundImage,
   CollectionFooterContainer,
   NameContainer,
   PriceContainer,
-  AddButton,
 } from './collection-item.styles';
 
 const CollectionItem = ({ item, addItem }) => {
@@ -19,9 +19,9 @@ const CollectionItem = ({ item, addItem }) => {
         <NameContainer>{name}</NameContainer>
         <PriceContainer>{price}</PriceContainer>
       </CollectionFooterContainer>
-      <AddButton onClick={() => addItem(item)} inverted>
+      <CustomButton onClick={() => addItem(item)} inverted>
         ADD TO CART
-      </AddButton>
+      </CustomButton>
     </CollectionItemContainer>
   );
 };

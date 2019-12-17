@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import CustomButton from '../custom-button/custom-button.component';
 
 const styledSpan = css`
   color: #243b53;
@@ -14,11 +13,18 @@ export const CollectionItemContainer = styled.div`
   align-items: center;
   position: relative;
 
+  button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 255px;
+    display: none;
+  }
+
   &:hover {
     .image {
       opacity: 0.9;
     }
-
     button {
       display: flex;
       opacity: 0.85;
@@ -54,12 +60,4 @@ export const PriceContainer = styled.span`
   width: 10%;
 
   ${styledSpan}
-`;
-
-export const AddButton = styled(CustomButton)`
-  width: 80%;
-  opacity: 0.7;
-  position: absolute;
-  top: 255px;
-  display: none;
 `;
