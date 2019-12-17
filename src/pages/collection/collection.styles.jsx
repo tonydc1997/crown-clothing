@@ -5,13 +5,13 @@ export const CollectionPageContainer = styled.div`
   flex-direction: column;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled.h2`
   color: #102a43;
   font-size: 38px;
   margin: 0 auto 30px;
 `;
 
-export const CollectionItemsContainer = styled.div`
+export const ItemsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
