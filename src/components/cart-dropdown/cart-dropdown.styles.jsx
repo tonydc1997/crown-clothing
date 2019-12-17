@@ -20,3 +20,9 @@ export const CartItemsContainer = styled.div`
   flex-direction: column;
   overflow: scroll;
 `;
+
+export const EmptyMessageContainer = styled.div`
+  color: #102a43;
+  font-size: 18px;
+  margin: 50px auto;
+`;
