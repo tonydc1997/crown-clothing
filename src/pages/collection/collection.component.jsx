@@ -7,7 +7,6 @@ import {
   ItemsContainer,
   TitleContainer,
 } from './collection.styles';
-import { CollectionItemContainer } from '../../components/collection-item/collection-item.styles';
 
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
