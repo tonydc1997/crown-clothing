@@ -7,6 +7,17 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+
+  &:hover {
+    .image {
+      opacity: 0.9;
+    }
+
+    button {
+      display: flex;
+      opacity: 0.85;
+    }
+  }
 `;
 
 export const BackgroundImage = styled.div`
