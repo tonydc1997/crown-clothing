@@ -9,7 +9,7 @@ export const CollectionItemContainer = styled.div`
   position: relative;
 `;
 
-export const ImageContainer = styled.div`
+export const BackgroundImage = styled.div`
   width: 100%;
   height: 95%;
   background-size: cover;
