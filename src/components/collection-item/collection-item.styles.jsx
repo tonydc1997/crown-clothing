@@ -16,3 +16,11 @@ export const ImageContainer = styled.div`
   background-position: center;
   margin-bottom: 5px;
 `;
+
+export const CollectionFooterContainer = styled.div`
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+`;
