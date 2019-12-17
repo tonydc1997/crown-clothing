@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const InvertedButtonStyles = css`
+const InvertedButtonStyles = css`
   background-image: linear-gradient(
     to top,
     #b2b2b2,
@@ -25,6 +25,8 @@ export const InvertedButtonStyles = css`
     color: black;
   }
 `;
+
+const 
 
 export const CustomButtonContainer = styled.button`
   text-align: center;
