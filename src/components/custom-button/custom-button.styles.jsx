@@ -1,5 +1,31 @@
 import styled, { css } from 'styled-components';
 
+export const InvertedButtonStyles = css`
+  background-image: linear-gradient(
+    to top,
+    #b2b2b2,
+    #c4c4c4,
+    #d5d5d5,
+    #e8e8e8,
+    #fafafa
+  );
+  color: #181818;
+  border: 1px solid #d1d1d1;
+
+  &:hover {
+    border: 1px solid white;
+    background-image: linear-gradient(
+      to top,
+      #dbdbdb,
+      #e4e4e4,
+      #ededed,
+      #f6f6f6,
+      #ffffff
+    );
+    color: black;
+  }
+`;
+
 export const CustomButtonContainer = styled.button`
   text-align: center;
   min-width: 165px;
