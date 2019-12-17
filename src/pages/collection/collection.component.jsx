@@ -12,11 +12,9 @@ import { CollectionItemContainer } from '../../components/collection-item/collec
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
-    <CollectionPageContainer className="collection-page">
-      <CollectionItemContainer className="title">
-        {title}
-      </CollectionItemContainer>
-      <ItemsContainer className="items">
+    <CollectionPageContainer>
+      <CollectionItemContainer>{title}</CollectionItemContainer>
+      <ItemsContainer>
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}
