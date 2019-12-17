@@ -36,3 +36,8 @@ export const CollectionFooterContainer = styled.div`
   justify-content: space-between;
   font-size: 18px;
 `;
+
+export const NameContainr = styled.span`
+  width: 90%;
+  margin-bottom: 15px;
+`;
