@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const CollectionItemContainer = styled.div`
   width: 20vw;
@@ -40,4 +40,8 @@ export const CollectionFooterContainer = styled.div`
 export const NameContainr = styled.span`
   width: 90%;
   margin-bottom: 15px;
+`;
+
+export const PriceContainer = styled.span`
+  width: 10%;
 `;
