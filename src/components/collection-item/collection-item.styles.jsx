@@ -42,7 +42,7 @@ export const CollectionFooterContainer = styled.div`
   font-size: 18px;
 `;
 
-export const NameContainr = styled.span`
+export const NameContainer = styled.span`
   width: 90%;
   margin-bottom: 15px;
 
