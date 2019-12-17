@@ -4,8 +4,8 @@ import CollectionItem from '../../components/collection-item/collection-item.com
 import { selectCollection } from '../../redux/shop/shop.selectors';
 import {
   CollectionPageContainer,
-  CollectionItemsContainer,
   ItemsContainer,
+  TitleContainer,
 } from './collection.styles';
 import { CollectionItemContainer } from '../../components/collection-item/collection-item.styles';
 
@@ -13,7 +13,7 @@ const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
-      <CollectionItemContainer>{title}</CollectionItemContainer>
+      <TitleContainer>{title}</TitleContainer>
       <ItemsContainer>
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
