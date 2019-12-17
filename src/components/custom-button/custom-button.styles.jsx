@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const InvertedButtonStyles = css`
+const invertedButtonStyles = css`
   background-image: linear-gradient(
     to top,
     #b2b2b2,
@@ -26,7 +26,30 @@ const InvertedButtonStyles = css`
   }
 `;
 
-const 
+const googleSignInStyles = css`
+  background-image: linear-gradient(
+    to bottom,
+    #4285f4,
+    #3f82f1,
+    #3c7fee,
+    #387deb,
+    #357ae8
+  );
+  border: 1px solid #357ae8;
+  color: #f0f0f0;
+
+  &:hover {
+    background-image: linear-gradient(
+      to bottom,
+      #4285f4,
+      #3e80eb,
+      #3b7ae3,
+      #3775da,
+      #3370d2
+    );
+    color: white;
+  }
+`;
 
 export const CustomButtonContainer = styled.button`
   text-align: center;
