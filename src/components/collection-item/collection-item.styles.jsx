@@ -45,8 +45,12 @@ export const CollectionFooterContainer = styled.div`
 export const NameContainr = styled.span`
   width: 90%;
   margin-bottom: 15px;
+
+  ${styledSpan}
 `;
 
 export const PriceContainer = styled.span`
   width: 10%;
+
+  ${styledSpan}
 `;
