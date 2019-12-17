@@ -29,7 +29,7 @@ export const CollectionItemContainer = styled.div`
 export const BackgroundImage = styled.div`
   width: 100%;
   height: 95%;
-  backgroundimage: ${({ imageUrl }) => `url(${imageUrl})`};
+  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
   background-size: cover;
   background-position: center;
   margin-bottom: 5px;
