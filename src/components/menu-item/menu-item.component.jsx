@@ -1,23 +1,24 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import './menu-item.styles.scss';
+import {
+  MenuItemContainer,
+  BackgroundImage,
+  ContentContainer,
+  Title,
+  SubTitle,
+} from './menu-item.styles';
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
-  <div
-    className={`${size} menu__item`}
+  <MenuItemContainer
+    size={size}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
   >
-    <div
-      className="background-image"
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-      }}
-    />
-    <div className="content">
-      <h1 className="title">{title.toUpperCase()}</h1>
-      <span className="title__sub">SHOP NOW</span>
-    </div>
-  </div>
+    <BackgroundImage className="background-image" imageUrl={imageUrl} />
+    <ContentContainer className="content">
+      <Title>{title.toUpperCase()}</Title>
+      <SubTitle>SHOP NOW</SubTitle>
+    </ContentContainer>
+  </MenuItemContainer>
 );
 
 // withRouter allows access to history prop
