@@ -34,7 +34,16 @@ export const TextContainer = styled.span`
 export const QuantityContainer = styled.span`
   display: flex;
 
+  span {
+    margin: 0 10px;
+  }
+
   ${textContainerStyles}
+`;
+
+export const Arrow = styled.div`
+  cursor: pointer;
+  color: #cdd9e5;
 `;
 
 export const RemoveButton = styled.div`
