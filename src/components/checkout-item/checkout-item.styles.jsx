@@ -1,4 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const textContainerStyles = css`
+  width: 23%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #243b53;
+`;
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
