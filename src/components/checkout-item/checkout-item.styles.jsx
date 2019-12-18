@@ -27,6 +27,16 @@ export const ImageContainer = styled.div`
   }
 `;
 
+export const TextContainer = styled.span`
+  ${textContainerStyles}
+`;
+
+export const QuantityContainer = styled.span`
+  display: flex;
+
+  ${textContainerStyles}
+`;
+
 export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
