@@ -17,31 +17,31 @@ import {
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <CheckoutPageContainer className="checkout-page">
-    <CheckoutHeader className="checkout-header">
-      <HeaderBlock className="header-block">
+  <CheckoutPageContainer>
+    <CheckoutHeader>
+      <HeaderBlock>
         <span>Product</span>
       </HeaderBlock>
-      <HeaderBlock className="header-block">
+      <HeaderBlock>
         <span>Description</span>
       </HeaderBlock>
-      <div className="header-block">
+      <div>
         <span>Quantity</span>
       </div>
-      <HeaderBlock className="header-block">
+      <HeaderBlock>
         <span>Price</span>
       </HeaderBlock>
-      <HeaderBlock className="header-block">
+      <HeaderBlock>
         <span>Remove</span>
       </HeaderBlock>
     </CheckoutHeader>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <Total className="total">
-      TOTAL: <TotalPrice className="total-price">${total}</TotalPrice>
+    <Total>
+      TOTAL: <TotalPrice>${total}</TotalPrice>
     </Total>
-    <TestCardWarning className="test-warning">
+    <TestCardWarning>
       *Please use the following credit card for test payments*
       <br />
       4242 4242 4242 4242 - Exp: 01/20 - CVC: 123
