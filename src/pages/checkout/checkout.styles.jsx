@@ -40,7 +40,7 @@ export const Total = styled.div`
   color: #829ab1;
 `;
 
-export const TotolPrice = styled.span`
+export const TotalPrice = styled.span`
   font-size: 48px;
   font-weight: 700;
   color: #243b53;
