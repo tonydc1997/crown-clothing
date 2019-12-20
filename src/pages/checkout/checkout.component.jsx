@@ -7,40 +7,47 @@ import {
   selectCartItems,
   selectCartTotal,
 } from '../../redux/cart/cart.selectors';
-import './checkout.styles.scss';
+import {
+  CheckoutPageContainer,
+  CheckoutHeader,
+  HeaderBlock,
+  Total,
+  TotalPrice,
+  TestCardWarning,
+} from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="checkout-header">
-      <div className="header-block">
+  <CheckoutPageContainer>
+    <CheckoutHeader>
+      <HeaderBlock>
         <span>Product</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlock>
+      <HeaderBlock>
         <span>Description</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlock>
+      <div>
         <span>Quantity</span>
       </div>
-      <div className="header-block">
+      <HeaderBlock>
         <span>Price</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlock>
+      <HeaderBlock>
         <span>Remove</span>
-      </div>
-    </div>
+      </HeaderBlock>
+    </CheckoutHeader>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <div className="total">
-      TOTAL: <span className="total-price">${total}</span>
-    </div>
-    <div className="test-warning">
+    <Total>
+      TOTAL: <TotalPrice>${total}</TotalPrice>
+    </Total>
+    <TestCardWarning>
       *Please use the following credit card for test payments*
       <br />
       4242 4242 4242 4242 - Exp: 01/20 - CVC: 123
-    </div>
+    </TestCardWarning>
     <StripeCheckoutButton price={total} />
-  </div>
+  </CheckoutPageContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
