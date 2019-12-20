@@ -12,42 +12,42 @@ import {
   CheckoutHeader,
   HeaderBlock,
   Total,
-  TotolPrice,
+  TotalPrice,
   TestCardWarning,
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="checkout-header">
-      <div className="header-block">
+  <CheckoutPageContainer className="checkout-page">
+    <CheckoutHeader className="checkout-header">
+      <HeaderBlock className="header-block">
         <span>Product</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlock>
+      <HeaderBlock className="header-block">
         <span>Description</span>
-      </div>
+      </HeaderBlock>
       <div className="header-block">
         <span>Quantity</span>
       </div>
-      <div className="header-block">
+      <HeaderBlock className="header-block">
         <span>Price</span>
-      </div>
-      <div className="header-block">
+      </HeaderBlock>
+      <HeaderBlock className="header-block">
         <span>Remove</span>
-      </div>
-    </div>
+      </HeaderBlock>
+    </CheckoutHeader>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <div className="total">
-      TOTAL: <span className="total-price">${total}</span>
-    </div>
-    <div className="test-warning">
+    <Total className="total">
+      TOTAL: <TotalPrice className="total-price">${total}</TotalPrice>
+    </Total>
+    <TestCardWarning className="test-warning">
       *Please use the following credit card for test payments*
       <br />
       4242 4242 4242 4242 - Exp: 01/20 - CVC: 123
-    </div>
+    </TestCardWarning>
     <StripeCheckoutButton price={total} />
-  </div>
+  </CheckoutPageContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
