@@ -51,6 +51,7 @@ export const addCollectionAndDocuments = async (
   });
   return await batch.commit();
 };
+const convertCollectionsSnapshotToMap();
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
