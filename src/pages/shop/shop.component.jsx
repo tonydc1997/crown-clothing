@@ -6,6 +6,7 @@ import ShopPageContainer from './shop.styles';
 
 class ShopPage extends React.Component {
   render() {
+    const { match } = this.props;
     return (
       <ShopPageContainer>
         <Route exact path={`${match.path}`} component={CollectionsOverview} />
