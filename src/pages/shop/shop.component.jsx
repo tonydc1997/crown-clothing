@@ -40,4 +40,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(updateCollections(collectionsMap)),
 });
 
-export default ShopPage;
+export default connect(null, mapDispatchToProps)(ShopPage);
