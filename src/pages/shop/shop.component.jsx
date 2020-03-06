@@ -1,14 +1,15 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
-import CollectionPage from '../collection/collection.component';
-import ShopPageContainer from './shop.styles';
 import {
   firestore,
   convertCollectionsSnapshotToMap,
 } from '../../firebase/firebase.utils';
 import { updateCollections } from '../../redux/shop/shop.actions';
+import WithSpinner from '../../components/with-spinner/with-spinner.component';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
+import CollectionPage from '../collection/collection.component';
+import ShopPageContainer from './shop.styles';
 
 class ShopPage extends React.Component {
   unsubscribeFromSnapshot = null;
