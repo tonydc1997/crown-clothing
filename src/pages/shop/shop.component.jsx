@@ -12,6 +12,9 @@ import CollectionPage from '../collection/collection.component';
 import ShopPageContainer from './shop.styles';
 
 class ShopPage extends React.Component {
+  state = {
+    loading: true,
+  };
   unsubscribeFromSnapshot = null;
 
   componentDidMount() {
@@ -20,6 +23,7 @@ class ShopPage extends React.Component {
     collectionRef.onSnapshot(async snapshot => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
       updateCollections(collectionsMap);
+      this.setState({ loading: false });
     });
   }
 
