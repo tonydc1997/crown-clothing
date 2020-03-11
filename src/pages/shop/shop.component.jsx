@@ -21,7 +21,7 @@ class ShopPage extends React.Component {
   }
 
   render() {
-    const { match, collectionIsFetching } = this.props;
+    const { match, collectionIsFetching, isCollectionsLoaded } = this.props;
     return (
       <ShopPageContainer>
         <Route
