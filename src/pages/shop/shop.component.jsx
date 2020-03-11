@@ -38,7 +38,7 @@ class ShopPage extends React.Component {
           path={`${match.path}/:collectionId`}
           render={props => (
             <CollectionPageWithSpinner
-              isLoading={collectionIsFetching}
+              isLoading={!isCollectionsLoaded}
               {...props}
             />
           )}
