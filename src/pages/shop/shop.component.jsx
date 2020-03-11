@@ -50,6 +50,7 @@ class ShopPage extends React.Component {
 
 const mapStateToProps = createStructuredSelector({
   collectionIsFetching: selectCollectionIsFetching,
+  isCollectionsLoaded: selectIsCollectionsLoaded,
 });
 
 const mapDispatchToProps = dispatch => ({
