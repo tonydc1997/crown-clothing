@@ -3,10 +3,7 @@ import { Route } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { fetchCollectionsStartAsync } from '../../redux/shop/shop.actions';
-import {
-  selectCollectionIsFetching,
-  selectIsCollectionsLoaded,
-} from '../../redux/shop/shop.selectors';
+import { selectIsCollectionsLoaded } from '../../redux/shop/shop.selectors';
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPage from '../collection/collection.component';
