@@ -8,3 +8,8 @@ import CollectionsOverview from './collections-overview.component';
 const mapStateToProps = createStructuredSelector({
   isLoading: selectCollectionIsFetching,
 });
+
+const CollectionsOverviewContainer = compose(
+  connect(mapStateToProps),
+  WithSpinner
+)(CollectionsOverview);
