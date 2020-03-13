@@ -13,7 +13,7 @@ class ShopPage extends React.Component {
   }
 
   render() {
-    const { match, isCollectionsLoaded } = this.props;
+    const { match } = this.props;
     return (
       <ShopPageContainer>
         <Route
@@ -30,12 +30,8 @@ class ShopPage extends React.Component {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  isCollectionsLoaded: selectIsCollectionsLoaded,
-});
-
 const mapDispatchToProps = dispatch => ({
   fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ShopPage);
+export default connect(null, mapDispatchToProps)(ShopPage);
