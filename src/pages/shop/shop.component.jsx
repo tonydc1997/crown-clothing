@@ -20,7 +20,7 @@ class ShopPage extends React.Component {
   }
 
   render() {
-    const { match, collectionIsFetching, isCollectionsLoaded } = this.props;
+    const { match, isCollectionsLoaded } = this.props;
     return (
       <ShopPageContainer>
         <Route
@@ -48,7 +48,6 @@ class ShopPage extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  collectionIsFetching: selectCollectionIsFetching,
   isCollectionsLoaded: selectIsCollectionsLoaded,
 });
 
