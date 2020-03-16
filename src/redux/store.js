@@ -4,7 +4,9 @@ import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from './root-reducer';
 
-const middlewares = [];
+const sagaMiddlware = createSagaMiddleware();
+
+const middlewares = [sagaMiddlware];
 
 if (process.env.NODE_ENV === 'development') {
   middlewares.push(logger);
