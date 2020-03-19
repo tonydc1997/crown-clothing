@@ -8,8 +8,7 @@ import {
 
 export function* signInWithGoogle() {
   try {
-    const userRef = yield auth.signInWithPopup(googleProvider);
-    console.log(userRef);
+    const { user } = yield auth.signInWithPopup(googleProvider);
   } catch (error) {}
 }
 
