@@ -6,16 +6,16 @@ export const setCurrentUser = user => ({
 });
 
 export const googleSignInStart = () => ({
-  type: UserActionTypes.email_SIGN_IN_START,
+  type: UserActionTypes.GOOGLE_SIGN_IN_START,
 });
 
 export const googleSignInSuccess = user => ({
-  type: UserActionTypes.email_SIGN_IN_SUCCESS,
+  type: UserActionTypes.GOOGLE_SIGN_IN_SUCCESS,
   payload: user,
 });
 
 export const googleSignInFailure = error => ({
-  type: UserActionTypes.email_SIGN_IN_FAILURE,
+  type: UserActionTypes.GOOGLE_SIGN_IN_FAILURE,
   payload: error,
 });
 
