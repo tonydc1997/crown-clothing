@@ -16,3 +16,7 @@ export function* signInWithGoogle() {
 export function* onGoogleSignInStart() {
   yield takeLatest(UserActionTypes.GOOGLE_SIGN_IN_START);
 }
+
+export function* userSagas() {
+  yield all(call([onGoogleSignInStart]));
+}
