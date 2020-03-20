@@ -7,6 +7,16 @@ import {
   createUserProfileDocument,
 } from '../../firebase/firebase.utils';
 
+export function* getSnapshotFromUserAuth(userAuth) {
+  try {
+    const userRef = yield call(createUserProfileDocument, userAuth);
+    const userSnapshot = yield userRef.get();
+    yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
+  } catch (error) {
+    yield put(signInFailure(error));
+  }
+}
+
 export function* signInWithGoogle() {
   try {
     const { user } = yield auth.signInWithPopup(googleProvider);
