@@ -79,7 +79,7 @@ class SignUp extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch = {
+const mapDispatchToProps = dispatch => ({
   signUpStart: userCredentials => dispatch(signUpStart(userCredentials)),
 });
 
