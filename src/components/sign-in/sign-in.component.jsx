@@ -13,11 +13,10 @@ import {
   ButtonsContainer,
 } from './sign-in.styles';
 
-const SignIn = () =>  {
+const SignIn = ({emailSignInStart}) =>  {
   const [userCredentials, setCredentials] = useState({ email: '', password: '' })
   const handleSubmit = async event => {
     event.preventDefault();
-    const { emailSignInStart } = this.props;
     const { email, password } = this.state;
 
     emailSignInStart(email, password);
