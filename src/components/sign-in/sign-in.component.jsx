@@ -24,7 +24,7 @@ const SignIn = ({emailSignInStart}) =>  {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    this.setState({ [name]: value });
+    setCredentials({ ...userCredentials, [name]: value });
   };
 
   render() {
