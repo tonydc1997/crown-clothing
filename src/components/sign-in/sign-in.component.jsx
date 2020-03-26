@@ -28,7 +28,6 @@ const SignIn = ({emailSignInStart}) =>  {
   };
 
   render() {
-    const { email, password } = this.state;
     const { googleSignInStart } = this.props;
     return (
       <SignInContainer className="sign-in">
