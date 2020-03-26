@@ -13,8 +13,8 @@ import {
   ButtonsContainer,
 } from './sign-in.styles';
 
-class SignIn extends React.Component {
-  handleSubmit = async event => {
+const SignIn = () =>  {
+  const handleSubmit = async event => {
     event.preventDefault();
     const { emailSignInStart } = this.props;
     const { email, password } = this.state;
@@ -22,7 +22,7 @@ class SignIn extends React.Component {
     emailSignInStart(email, password);
   };
 
-  handleChange = event => {
+  const handleChange = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
