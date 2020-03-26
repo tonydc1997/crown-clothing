@@ -35,12 +35,12 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
       <Title className="title">I already have an account</Title>
       <Content>Sign in with your email and password</Content>
 
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <FormInput
           name="email"
           type="email"
           value={email}
-          handleChange={this.handleChange}
+          handleChange={handleChange}
           label="Email"
           required
         />
@@ -48,7 +48,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           name="password"
           type="password"
           value={password}
-          handleChange={this.handleChange}
+          handleChange={handleChange}
           label="Password"
           required
         />
