@@ -17,7 +17,7 @@ const SignIn = ({emailSignInStart}) =>  {
   const [userCredentials, setCredentials] = useState({ email: '', password: '' })
   const handleSubmit = async event => {
     event.preventDefault();
-    const { email, password } = this.state;
+    const { email, password } = userCredentials;
 
     emailSignInStart(email, password);
   };
