@@ -13,7 +13,7 @@ import {
   ButtonsContainer,
 } from './sign-in.styles';
 
-const SignIn = ({emailSignInStart}) =>  {
+const SignIn = ({emailSignInStart, googleSignInStart}) =>  {
   const [userCredentials, setCredentials] = useState({ email: '', password: '' })
   const handleSubmit = async event => {
     event.preventDefault();
@@ -28,7 +28,6 @@ const SignIn = ({emailSignInStart}) =>  {
   };
 
   render() {
-    const { googleSignInStart } = this.props;
     return (
       <SignInContainer className="sign-in">
         <Title className="title">I already have an account</Title>
