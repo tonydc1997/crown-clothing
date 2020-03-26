@@ -14,6 +14,7 @@ import {
 } from './sign-in.styles';
 
 const SignIn = () =>  {
+  const [userCredentials, setCredentials] = useState({ email: '', password: '' })
   const handleSubmit = async event => {
     event.preventDefault();
     const { emailSignInStart } = this.props;
