@@ -24,7 +24,7 @@ const SignUp = ({ signUpStart }) => {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    setUserCredentials({ [name]: value });
+    setUserCredentials({ ...userCredentials, [name]: value });
   };
 
   return (
