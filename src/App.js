@@ -16,9 +16,9 @@ import { checkUserSession } from './redux/user/user.actions';
 const App = ({checkUserSession}) => {
   unsubscribeFromAuth = null;
 
-  componentDidMount() {
+  useEffect(() => {
     checkUserSession();
-  }
+  }, []);
 
   componentWillUnmount() {
     this.unsubscribeFromAuth();
