@@ -22,7 +22,6 @@ const SignUp = ({signUpStart}) => {
   };
 
   render() {
-    const { displayName, email, password, confirmPassword } = this.state;
     return (
       <SignUpContainer>
         <Title>I do not have an account</Title>
