@@ -6,17 +6,6 @@ import { signUpStart } from '../../redux/user/user.actions';
 import { SignUpContainer, Title } from './sign-up.styles';
 
 const SignUp = () => {
-  constructor() {
-    super();
-
-    this.state = {
-      displayName: '',
-      email: '',
-      password: '',
-      confirmPassword: '',
-    };
-  }
-
   handleSubmit = async event => {
     event.preventDefault();
     const { signUpStart } = this.props;
