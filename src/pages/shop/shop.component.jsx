@@ -6,7 +6,7 @@ import CollectionsOverviewContainer from '../../components/collections-overview/
 import CollectionPageContainer from '../collection/collection.container';
 import ShopPageContainer from './shop.styles';
 
-const ShopPage = ({ match }) => {
+const ShopPage = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart();
   }, [fetchCollectionsStart]);
