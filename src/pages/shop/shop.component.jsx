@@ -6,12 +6,11 @@ import CollectionsOverviewContainer from '../../components/collections-overview/
 import CollectionPageContainer from '../collection/collection.container';
 import ShopPageContainer from './shop.styles';
 
-const ShopPage = () => {
+const ShopPage = ({match}) => {
   componentDidMount() {
     const { fetchCollectionsStart } = this.props;
     fetchCollectionsStart();
   }
-    const { match } = this.props;
     return (
       <ShopPageContainer>
         <Route
