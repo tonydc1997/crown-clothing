@@ -13,11 +13,10 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
 
-const App = () => {
+const App = ({checkUserSession}) => {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    const { checkUserSession } = this.props;
     checkUserSession();
   }
 
