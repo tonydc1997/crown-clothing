@@ -6,26 +6,25 @@ import CollectionsOverviewContainer from '../../components/collections-overview/
 import CollectionPageContainer from '../collection/collection.container';
 import ShopPageContainer from './shop.styles';
 
-const ShopPage = ({match}) => {
-  componentDidMount() {
-    const { fetchCollectionsStart } = this.props;
+const ShopPage = ({ match }) => {
+  useEffect(() => {
     fetchCollectionsStart();
-  }
-    return (
-      <ShopPageContainer>
-        <Route
-          exact
-          path={`${match.path}`}
-          component={CollectionsOverviewContainer}
-        />
-        <Route
-          path={`${match.path}/:collectionId`}
-          component={CollectionPageContainer}
-        />
-      </ShopPageContainer>
-    );
-  }
+  }, [fetchCollectionsStart]);
 
+  return (
+    <ShopPageContainer>
+      <Route
+        exact
+        path={`${match.path}`}
+        component={CollectionsOverviewContainer}
+      />
+      <Route
+        path={`${match.path}/:collectionId`}
+        component={CollectionPageContainer}
+      />
+    </ShopPageContainer>
+  );
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchCollectionsStart: () => dispatch(fetchCollectionsStart()),
