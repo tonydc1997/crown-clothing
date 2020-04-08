@@ -12,11 +12,8 @@ export const MenuItemContainer = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 800px) {
+    height: 300px;
     width: 46%;
-
-    &:nth-child(3) {
-      height: 378px;
-    }
   }
 
   &:hover {
