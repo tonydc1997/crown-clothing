@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body {
   font-family: 'Open Sans Condensed';
 }
@@ -15,3 +15,5 @@ a {
 }
 
 `;
+
+export default GlobalStyle;
