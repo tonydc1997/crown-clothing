@@ -23,12 +23,6 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   position: relative;
 
-  @media screen and (max-width: 800px) {
-    left: 1rem;
-    width: 50px;
-    height: 100%;
-  }
-
   &::before,
   &::after {
     content: '';
@@ -59,6 +53,12 @@ export const LogoContainer = styled(Link)`
   &:hover::after {
     transform-origin: center top;
     transform: scaleY(1);
+  }
+
+  @media screen and (max-width: 800px) {
+    left: 1rem;
+    width: 50px;
+    height: 100%;
   }
 `;
 

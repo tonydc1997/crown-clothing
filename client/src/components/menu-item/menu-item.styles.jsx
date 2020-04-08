@@ -11,11 +11,6 @@ export const MenuItemContainer = styled.div`
   margin: 0 7.5px 15px;
   overflow: hidden;
 
-  @media screen and (max-width: 800px) {
-    height: 300px;
-    width: 46%;
-  }
-
   &:hover {
     cursor: pointer;
 
@@ -36,6 +31,11 @@ export const MenuItemContainer = styled.div`
 
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 300px;
+    width: 46%;
   }
 `;
 

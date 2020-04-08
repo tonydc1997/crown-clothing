@@ -10,13 +10,13 @@ export const CartIconContainer = styled.div`
   cursor: pointer;
   margin-right: 63px;
 
-  @media screen and (max-width: 800px) {
-    margin-right: 4px;
-  }
-
   .shopping-icon {
     width: 24px;
     height: 24px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-right: 4px;
   }
 `;
 
