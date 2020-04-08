@@ -31,6 +31,26 @@ export const CollectionItemContainer = styled.div`
       opacity: 0.85;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    width: 45vw;
+
+    button {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
+    }
+  }
 `;
 
 export const BackgroundImage = styled.div`
