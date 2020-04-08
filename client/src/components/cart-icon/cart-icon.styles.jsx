@@ -14,6 +14,10 @@ export const CartIconContainer = styled.div`
     width: 24px;
     height: 24px;
   }
+
+  @media screen and (max-width: 800px) {
+    margin-right: 4px;
+  }
 `;
 
 export const ItemCountContainer = styled.span`
