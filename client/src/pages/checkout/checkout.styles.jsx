@@ -12,6 +12,10 @@ export const CheckoutPageContainer = styled.div`
     margin-left: auto;
     margin-top: 50px;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 export const CheckoutHeader = styled.div`
@@ -31,6 +35,14 @@ export const HeaderBlock = styled.div`
   &:last-child {
     width: 8%;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 22%;
+
+    &:last-child {
+      width: 12%;
+    }
+  }
 `;
 
 export const Total = styled.div`
@@ -41,7 +53,7 @@ export const Total = styled.div`
 `;
 
 export const TotalPrice = styled.span`
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   color: #243b53;
 `;
