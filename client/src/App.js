@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import Header from './components/header/header.component';
+import Spinner from './components/spinner/spinner.component';
 import GlobalStyle from './global.styles';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
