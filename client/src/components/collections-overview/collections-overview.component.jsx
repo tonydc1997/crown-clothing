@@ -7,8 +7,13 @@ import CollectionsOverviewContainer from './collections-overview.styles';
 
 const CollectionsOverview = ({ collections }) => (
   <CollectionsOverviewContainer className="collections-overview">
-    {collections.map(({ id, title, items }) => (
-      <CollectionPreview key={id} title={title} items={items} />
+    {collections.map(({ id, title, items, routeName }) => (
+      <CollectionPreview
+        key={id}
+        title={title}
+        items={items}
+        routeName={routeName}
+      />
     ))}
   </CollectionsOverviewContainer>
 );
