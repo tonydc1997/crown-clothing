@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
