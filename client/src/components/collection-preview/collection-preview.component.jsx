@@ -7,7 +7,7 @@ import {
   PreviewContainer,
 } from './collection-preview.styles';
 
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items, history, match, routeName }) => (
   <CollectionPreviewContainer>
     <TitleContainer>{title.toUpperCase()}</TitleContainer>
     <PreviewContainer>
