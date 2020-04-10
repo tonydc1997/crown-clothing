@@ -3,9 +3,14 @@ import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
 
-import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
-import CollectionPageContainer from '../collection/collection.container';
 import ShopPageContainer from './shop.styles';
+
+const CollectionsOverviewContainer = lazy(() =>
+  import('../../components/collections-overview/collections-overview.container')
+);
+const CollectionPageContainer = lazy(() =>
+  import('../collection/collection.container')
+);
 
 const ShopPage = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
