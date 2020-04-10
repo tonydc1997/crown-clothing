@@ -20,15 +20,17 @@ const ShopPage = ({ match, fetchCollectionsStart }) => {
 
   return (
     <ShopPageContainer>
-      <Route
-        exact
-        path={`${match.path}`}
-        component={CollectionsOverviewContainer}
-      />
-      <Route
-        path={`${match.path}/:collectionId`}
-        component={CollectionPageContainer}
-      />
+      <Suspense fallback={<Spinner />}>
+        <Route
+          exact
+          path={`${match.path}`}
+          component={CollectionsOverviewContainer}
+        />
+        <Route
+          path={`${match.path}/:collectionId`}
+          component={CollectionPageContainer}
+        />
+      </Suspense>
     </ShopPageContainer>
   );
 };
