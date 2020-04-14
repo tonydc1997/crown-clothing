@@ -21,11 +21,18 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     // You can also log the error to an error reporting service
-    logErrorToMyService(error, errorInfo);
+    console.log(error, errorInfo);
   }
 
   render() {
-    if (this.state.hasErrored) return <div>Something went wrong.</div>;
+    if (this.state.hasErrored) {
+      return (
+        <ErrorImageOverlay>
+          <ErrorImageContainer imageUrl={'https://i.imgur.com/A040Lxr.png'} />
+          <ErrorImageText>Sorry, This Page is Lost in Space</ErrorImageText>
+        </ErrorImageOverlay>
+      );
+    }
     return this.props.children;
   }
 }
