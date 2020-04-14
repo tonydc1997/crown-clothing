@@ -4,6 +4,7 @@ import {
   ErrorImageContainer,
   ErrorImageText,
 } from './error-boundary.styles';
+import astronaut from '../../assets/images/astronaut.png';
 
 class ErrorBoundary extends React.Component {
   constructor() {
@@ -28,7 +29,7 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasErrored) {
       return (
         <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl={'https://i.imgur.com/A040Lxr.png'} />
+          <ErrorImageContainer imageUrl={astronaut} />
           <ErrorImageText>Sorry, This Page is Lost in Space</ErrorImageText>
         </ErrorImageOverlay>
       );
