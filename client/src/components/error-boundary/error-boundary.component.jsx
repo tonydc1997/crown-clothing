@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
       return (
         <ErrorImageOverlay>
           <ErrorImageContainer imageUrl={astronaut} />
-          <ErrorImageText>Sorry, This Page is Lost in Space</ErrorImageText>
+          <ErrorImageText>Sorry, this page is lost in space...</ErrorImageText>
         </ErrorImageOverlay>
       );
     }
