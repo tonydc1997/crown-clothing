@@ -19,5 +19,8 @@ class ErrorBoundary extends React.Component {
     logErrorToMyService(error, errorInfo);
   }
 
-  render() {}
+  render() {
+    if (this.state.hasErrored) return <div>Something went wrong.</div>;
+    return this.props.children;
+  }
 }
