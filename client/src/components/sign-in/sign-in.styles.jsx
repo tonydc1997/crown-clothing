@@ -7,23 +7,23 @@ export const SignInContainer = styled.div`
   /* box-shadow: 0 4px 6px hsla(0, 0%, 0% 0.7), 0 15px 35px hsla(0, 0%, 0% 0.2); */
   display: flex;
   flex-direction: column;
+  margin: 3rem auto;
   padding: 32px 48px;
   width: 448px;
 
   @media screen and (max-width: 520px) {
-    width: 100%;
+    width: 90%;
   }
 
   @media screen and (min-width: 521px) and (max-width: 800px) {
     width: 80%;
-    margin-left: 4rem;
   }
 `;
 
 export const Title = styled.h2`
   color: hsl(211, 39%, 23%);
   font-size: 28px;
-  margin-top: 17px;
+  margin: 0;
   align-self: center;
 `;
 
