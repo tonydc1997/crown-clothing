@@ -10,6 +10,7 @@ export const CartIconContainer = styled.div`
   cursor: pointer;
   margin-right: 63px;
   margin-bottom: 6px;
+  color: hsl(209, 34%, 30%);
 
   .shopping-icon {
     width: 24px;
