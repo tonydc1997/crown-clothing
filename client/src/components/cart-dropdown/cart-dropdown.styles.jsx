@@ -7,14 +7,20 @@ export const CartDropdownContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid hsl(210, 31%, 80%);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px hsl(0, 0%, 0%, 0.1);
   background-color: white;
-  top: 90px;
-  right: 40px;
+  top: 68px;
+  right: 56px;
   z-index: 5;
 
   button {
     margin-top: auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    right: 24px;
   }
 `;
 
@@ -26,7 +32,7 @@ export const CartItemsContainer = styled.div`
 `;
 
 export const EmptyMessageContainer = styled.div`
-  color: #102a43;
+  color: hsl(209, 28%, 39%);
   font-size: 18px;
-  margin: 50px auto;
+  margin: 24px auto;
 `;

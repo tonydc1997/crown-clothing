@@ -8,6 +8,7 @@ export const MenuItemContainer = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-radius: 4px;
   margin: 0 7.5px 15px;
   overflow: hidden;
 
@@ -55,6 +56,7 @@ export const ContentContainer = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-radius: 4px;
   background-color: white;
   opacity: 0.65;
   position: absolute;
@@ -64,10 +66,11 @@ export const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 22px;
-  color: #4a4a4a;
+  color: hsl(209, 34%, 30%);
 `;
 
 export const SubTitle = styled.span`
-  font-weight: lighter;
+  color: hsl(211, 39%, 23%);
+  font-weight: light;
   font-size: 16px;
 `;

@@ -2,12 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
-  background: white;
+  background: hsl(210, 36%, 99%);
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -35,7 +34,7 @@ export const LogoContainer = styled(Link)`
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #2d2d2d;
+    background-color: hsl(209, 34%, 30%);
     transform: scaleY(0);
     transition: transform 0.5s ease;
   }
@@ -73,17 +72,19 @@ export const OptionsContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  margin-top: 4px;
   justify-content: flex-end;
 
   @media screen and (max-width: 800px) {
     width: 80%;
-    margin-top: 25px;
+    margin-top: 32px;
   }
 `;
 
 export const OptionLink = styled(Link)`
-  color: #102a43;
-  font-size: 18px;
+  color: hsl(210, 22%, 49%);
+  font-size: 16px;
+  font-weight: 700;
   margin-right: 1rem;
   padding: 10px 15px;
   position: relative;
@@ -104,7 +105,7 @@ export const OptionLink = styled(Link)`
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #2d2d2d;
+    background-color: hsl(209, 34%, 30%);
     transform: scaleX(0);
     transition: transform 0.5s ease;
   }
@@ -127,5 +128,9 @@ export const OptionLink = styled(Link)`
   &:hover::after {
     transform-origin: center right;
     transform: scaleX(1);
+  }
+
+  &:hover {
+    color: hsl(209, 34%, 30%);
   }
 `;

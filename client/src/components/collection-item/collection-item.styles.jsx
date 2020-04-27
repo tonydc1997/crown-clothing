@@ -1,9 +1,4 @@
-import styled, { css } from 'styled-components';
-
-const styledSpan = css`
-  color: #243b53;
-  font-size: 20px;
-`;
+import styled from 'styled-components';
 
 export const CollectionItemContainer = styled.div`
   width: 20vw;
@@ -59,6 +54,7 @@ export const BackgroundImage = styled.div`
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
   background-size: cover;
   background-position: center;
+  border-radius: 4px;
   margin-bottom: 5px;
 `;
 
@@ -66,19 +62,22 @@ export const CollectionFooterContainer = styled.div`
   width: 100%;
   height: 5%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
   font-size: 18px;
 `;
 
 export const NameContainer = styled.span`
   width: 90%;
-  margin-bottom: 15px;
-
-  ${styledSpan}
+  color: hsl(210, 22%, 49%);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 4px;
 `;
 
 export const PriceContainer = styled.span`
   width: 10%;
-
-  ${styledSpan}
+  color: hsl(209, 28%, 39%);
+  font-weight: 700;
+  font-size: 20px;
 `;
