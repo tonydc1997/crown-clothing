@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const textContainerStyles = css`
   width: 23%;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: #243b53;
 `;
 
