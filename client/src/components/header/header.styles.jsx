@@ -73,11 +73,12 @@ export const OptionsContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  margin-top: 4px;
   justify-content: flex-end;
 
   @media screen and (max-width: 800px) {
     width: 80%;
-    margin-top: 25px;
+    margin-top: 32px;
   }
 `;
 
