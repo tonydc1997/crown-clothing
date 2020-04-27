@@ -9,7 +9,7 @@ export const CartIconContainer = styled.div`
   justify-content: center;
   cursor: pointer;
   margin-right: 63px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   .shopping-icon {
     width: 24px;
