@@ -8,7 +8,7 @@ export const CartIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-right: 63px;
+  margin-right: 62px;
   margin-bottom: 6px;
   color: hsl(209, 34%, 30%);
 
@@ -18,7 +18,7 @@ export const CartIconContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    margin-right: 4px;
+    margin-right: 6px;
   }
 `;
 
