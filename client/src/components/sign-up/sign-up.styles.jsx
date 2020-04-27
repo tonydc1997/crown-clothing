@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const SignUpContainer = styled.div`
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid hsl(212, 33%, 89%);
+  /* box-shadow: 0 4px 6px hsla(0, 0%, 0% 0.7), 0 15px 35px hsla(0, 0%, 0% 0.2); */
   display: flex;
   flex-direction: column;
-  width: 28vw;
-
-  span {
-    color: #486581;
-    font-size: 18px;
-  }
+  padding: 32px 48px;
+  width: 448px;
 
   @media screen and (max-width: 520px) {
-    align-items: left;
-    width: 100%;
+    width: 90%;
   }
 
   @media screen and (min-width: 521px) and (max-width: 800px) {
@@ -21,7 +20,17 @@ export const SignUpContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  margin: 20px 0;
-  color: #243b53;
+  color: hsl(211, 39%, 23%);
   font-size: 28px;
+  margin: 0;
+  align-self: center;
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-bottom: 16px;
+  }
 `;
