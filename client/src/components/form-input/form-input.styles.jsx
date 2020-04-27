@@ -1,15 +1,17 @@
 import styled, { css } from 'styled-components';
 
-const mainColor = '#102a43';
-const subColor = '#627d98';
+const veryDarkGray = 'hsl(209, 61%, 16%)';
+const lightGray = 'hsl(210, 36%, 96%)';
+const gray = 'hsl(209, 28%, 39%)';
 const focusLabelStyles = css`
-  top: -14px;
-  color: ${mainColor};
+  top: -24px;
+  left: -12px;
+  color: ${veryDarkGray};
 `;
 
 export const GroupContainer = styled.div`
   position: relative;
-  margin: 45px 0;
+  margin: 48px 0;
   input[type='password'] {
     letter-spacing: 0.3em;
   }
@@ -17,15 +19,14 @@ export const GroupContainer = styled.div`
 
 export const FormInputContainer = styled.input`
   background: none;
-  background-color: white;
-  color: $sub-color;
+  background-color: ${lightGray};
+  color: ${gray};
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid ${subColor};
+  border: 1px solid ${lightGray};
+  border-radius: 4px;
   margin: 25px 0;
 
   &:focus {
@@ -39,9 +40,10 @@ export const FormInputContainer = styled.input`
 `;
 
 export const FormInputLabel = styled.label`
-  color: ${subColor};
+  color: ${gray};
   font-size: 16px;
   font-weight: normal;
+  padding-left: 12px;
   position: absolute;
   pointer-events: none;
   left: 5px;
