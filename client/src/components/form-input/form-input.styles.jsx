@@ -18,14 +18,13 @@ export const GroupContainer = styled.div`
 `;
 
 export const FormInputContainer = styled.input`
-  background: none;
   background-color: ${lightGray};
   color: ${gray};
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
-  border: 1px solid ${lightGray};
+  border: 1px solid hsl(212, 33%, 89%);
   border-radius: 4px;
   margin: 25px 0;
 
