@@ -48,12 +48,12 @@ export const HeaderBlock = styled.div`
 export const Total = styled.div`
   margin-top: 30px;
   margin-left: auto;
-  font-size: 36px;
+  font-size: 24px;
   color: #829ab1;
 `;
 
 export const TotalPrice = styled.span`
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: #243b53;
 `;
