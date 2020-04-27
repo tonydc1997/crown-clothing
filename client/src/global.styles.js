@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
   font-family: 'Open Sans';
-  background-color: hsl(210, 36%, 99%);
+  background-image: linear-gradient(to bottom, #fcfcfd, #fafafc, #f7f8fb, #f4f7f9, #f1f5f8);
 }
 
 a {
