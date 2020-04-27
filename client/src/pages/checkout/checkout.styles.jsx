@@ -49,13 +49,14 @@ export const Total = styled.div`
   margin-top: 30px;
   margin-left: auto;
   font-size: 24px;
-  color: #829ab1;
+  font-weight: 600;
+  color: hsl(210, 22%, 49%);
 `;
 
 export const TotalPrice = styled.span`
   font-size: 30px;
   font-weight: 700;
-  color: #243b53;
+  color: hsl(211, 39%, 23%);
 `;
 
 export const TestCardWarning = styled.div`
