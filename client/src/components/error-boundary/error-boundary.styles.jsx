@@ -16,9 +16,19 @@ export const ErrorImageContainer = styled.div`
   background-position: center;
   width: 60vh;
   height: 60vh;
+
+  @media screen and (max-width: 900px) {
+    width: 50vh;
+    height: 50vh;
+  }
 `;
 
 export const ErrorImageText = styled.h2`
   font-size: 36px;
   color: hsl(209, 34%, 30%);
+
+  @media screen and (max-width: 900px) {
+    font-size: 30px;
+    padding: 0 20px;
+  }
 `;
