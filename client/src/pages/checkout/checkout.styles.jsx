@@ -33,8 +33,8 @@ export const TotalPrice = styled.span`
 `;
 
 export const TestCardWarning = styled.div`
-  background-color: hsl(360, 100%, 95%);
-  border-left: 6px solid hsl(360, 100%, 80%);
+  background-color: hsl(212, 33%, 93%);
+  border-left: 6px solid hsl(199, 84%, 55%);
   border-radius: 6px;
   margin-top: 40px;
   padding: 16px 0 16px 16px;
@@ -42,7 +42,7 @@ export const TestCardWarning = styled.div`
 `;
 
 export const TestCardTitle = styled.p`
-  color: hsl(356, 75%, 53%);
+  color: hsl(211, 39%, 23%);
   font-size: 20px;
   font-weight: 700;
   padding: 0;
@@ -54,7 +54,7 @@ export const TestCardTitle = styled.p`
 `;
 
 export const TestCardMessage = styled.span`
-  color: hsl(360, 83%, 65%);
+  color: hsl(209, 28%, 30%);
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 24px;
