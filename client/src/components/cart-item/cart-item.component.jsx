@@ -3,16 +3,17 @@ import {
   CartItemContainer,
   CartItemImage,
   ItemDetailsContainer,
+  ItemPrice,
 } from './cart-item.styles';
 
 const CartItem = ({ item: { imageUrl, name, price, quantity } }) => (
   <CartItemContainer>
     <CartItemImage src={imageUrl} alt="item" />
     <ItemDetailsContainer>
-      <span>{name}</span>
       <span>
-        {quantity} x ${price}
+        {name} ({quantity})
       </span>
+      <ItemPrice>${price * quantity}</ItemPrice>
     </ItemDetailsContainer>
   </CartItemContainer>
 );
