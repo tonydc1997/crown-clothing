@@ -11,7 +11,7 @@ export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
   min-height: 100px;
-  border-bottom: 2px solid hsl(210, 23%, 95%);
+  border-top: 2px solid hsl(210, 23%, 95%);
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
@@ -22,6 +22,7 @@ export const ImageContainer = styled.div`
   padding-right: 15px;
 
   img {
+    border-radius: 6px;
     width: 100%;
     height: 100%;
   }
@@ -43,11 +44,11 @@ export const QuantityContainer = styled.span`
 
 export const Arrow = styled.div`
   cursor: pointer;
-  color: #cdd9e5;
+  color: hsl(211, 27%, 70%);
 `;
 
 export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
-  color: #829ab1;
+  color: hsl(210, 22%, 49%);
 `;

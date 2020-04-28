@@ -82,7 +82,7 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  color: hsl(210, 22%, 49%);
+  color: hsl(209, 34%, 30%);
   font-size: 16px;
   font-weight: 700;
   margin-right: 1rem;
@@ -131,6 +131,6 @@ export const OptionLink = styled(Link)`
   }
 
   &:hover {
-    color: hsl(209, 34%, 30%);
+    color: hsl(211, 39%, 23%);
   }
 `;
