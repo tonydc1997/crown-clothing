@@ -18,33 +18,6 @@ export const CheckoutPageContainer = styled.div`
   }
 `;
 
-export const CheckoutHeader = styled.div`
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid hsl(210, 23%, 95%);
-`;
-
-export const HeaderBlock = styled.div`
-  color: #102a43;
-  font-size: 18px;
-  text-transform: capitalize;
-  width: 23%;
-
-  &:last-child {
-    width: 8%;
-  }
-
-  @media screen and (max-width: 800px) {
-    width: 22%;
-
-    &:last-child {
-      width: 12%;
-    }
-  }
-`;
-
 export const Total = styled.div`
   margin-top: 30px;
   margin-left: auto;
@@ -60,8 +33,41 @@ export const TotalPrice = styled.span`
 `;
 
 export const TestCardWarning = styled.div`
-  text-align: center;
+  background-color: hsl(360, 100%, 95%);
+  border-left: 6px solid hsl(360, 100%, 80%);
+  border-radius: 6px;
   margin-top: 40px;
-  font-size: 24px;
-  color: #eb1313;
+  padding: 16px 0 16px 16px;
+  width: 100%;
+`;
+
+export const TestCardTitle = styled.p`
+  color: hsl(356, 75%, 53%);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 18px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 18px;
+  }
+`;
+
+export const TestCardMessage = styled.span`
+  color: hsl(360, 83%, 65%);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 24px;
+
+  img {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 20px;
+    margin-bottom: -4px;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 18px;
+  }
 `;

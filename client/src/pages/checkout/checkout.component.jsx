@@ -7,6 +7,9 @@ import {
   selectCartItems,
   selectCartTotal,
 } from '../../redux/cart/cart.selectors';
+import CreditCard from '../../assets/pay.svg';
+import Calender from '../../assets/icon-calendar-date.svg';
+import SecureLock from '../../assets/icon-lock.svg';
 import {
   CheckoutPageContainer,
   CheckoutHeader,
@@ -14,27 +17,12 @@ import {
   Total,
   TotalPrice,
   TestCardWarning,
+  TestCardTitle,
+  TestCardMessage,
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>
-    <CheckoutHeader>
-      <HeaderBlock>
-        <span>Product</span>
-      </HeaderBlock>
-      <HeaderBlock>
-        <span>Description</span>
-      </HeaderBlock>
-      <HeaderBlock>
-        <span>Quantity</span>
-      </HeaderBlock>
-      <HeaderBlock>
-        <span>Price</span>
-      </HeaderBlock>
-      <HeaderBlock>
-        <span>Remove</span>
-      </HeaderBlock>
-    </CheckoutHeader>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
@@ -42,9 +30,19 @@ const CheckoutPage = ({ cartItems, total }) => (
       Your total is <TotalPrice>${total}</TotalPrice>
     </Total>
     <TestCardWarning>
-      *Please use the following credit card for test payments*
-      <br />
-      4242 4242 4242 4242 - Exp: 01/30 - CVC: 123
+      <TestCardTitle>
+        Please use the credit card below when making payments.
+      </TestCardTitle>
+      <TestCardMessage>
+        <img src={CreditCard} alt="Credit Card icon" />
+        4242 4242 4242 4242
+        <br />
+        <img src={Calender} alt="Calender Icon" />
+        01/30
+        <br />
+        <img src={SecureLock} alt="Secure Lock" />
+        123
+      </TestCardMessage>
     </TestCardWarning>
     <StripeCheckoutButton price={total} />
   </CheckoutPageContainer>
