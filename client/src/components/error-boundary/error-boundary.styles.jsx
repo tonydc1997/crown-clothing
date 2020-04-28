@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ErrorImageOverlay = styled.div`
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,5 +20,5 @@ export const ErrorImageContainer = styled.div`
 
 export const ErrorImageText = styled.h2`
   font-size: 36px;
-  color: #1b1b1c;
+  color: hsl(209, 34%, 30%);
 `;
