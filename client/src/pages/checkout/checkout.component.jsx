@@ -12,8 +12,6 @@ import Calender from '../../assets/icon-calendar-date.svg';
 import SecureLock from '../../assets/icon-lock.svg';
 import {
   CheckoutPageContainer,
-  CheckoutHeader,
-  HeaderBlock,
   Total,
   TotalPrice,
   TestCardWarning,
