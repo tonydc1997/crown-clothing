@@ -9,6 +9,9 @@ export const CartItemContainer = styled.div`
 
 export const CartItemImage = styled.img`
   width: 30%;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12);
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.24);
 `;
 
 export const ItemDetailsContainer = styled.div`
@@ -17,10 +20,20 @@ export const ItemDetailsContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 10px 20px;
+  padding-left: 10px;
+  padding-bottom: 18px;
 
   span {
-    color: #102a43;
+    color: hsl(210, 22%, 49%);
+    font-weight: 700;
     font-size: 18px;
   }
+`;
+
+export const ItemPrice = styled.p`
+  color: hsl(209, 28%, 39%);
+  font-weight: 800;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 `;
