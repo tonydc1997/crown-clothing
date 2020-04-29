@@ -69,7 +69,7 @@ export const CollectionFooterContainer = styled.div`
 
 export const NameContainer = styled.span`
   width: 90%;
-  color: hsl(210, 22%, 49%);
+  color: hsl(210, 22%, 45%);
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 4px;
@@ -77,7 +77,7 @@ export const NameContainer = styled.span`
 
 export const PriceContainer = styled.span`
   width: 10%;
-  color: hsl(209, 28%, 39%);
+  color: hsl(209, 34%, 30%);
   font-weight: 700;
   font-size: 20px;
 `;

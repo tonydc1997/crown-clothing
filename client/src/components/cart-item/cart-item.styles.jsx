@@ -24,15 +24,15 @@ export const ItemDetailsContainer = styled.div`
   padding-bottom: 18px;
 
   span {
-    color: hsl(210, 22%, 49%);
-    font-weight: 700;
+    color: hsl(209, 28%, 45%);
+    font-weight: 600;
     font-size: 18px;
   }
 `;
 
 export const ItemPrice = styled.p`
-  color: hsl(209, 28%, 39%);
-  font-weight: 800;
+  color: hsl(209, 34%, 30%);
+  font-weight: 700;
   font-size: 20px;
   padding: 0;
   margin: 0;
