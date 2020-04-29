@@ -55,6 +55,7 @@ export const BackgroundImage = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 4px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.4);
   margin-bottom: 5px;
 `;
 

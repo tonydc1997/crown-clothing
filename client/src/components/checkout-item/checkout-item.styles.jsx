@@ -23,6 +23,7 @@ export const ImageContainer = styled.div`
 
   img {
     border-radius: 6px;
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.4);
     width: 100%;
     height: 100%;
   }
