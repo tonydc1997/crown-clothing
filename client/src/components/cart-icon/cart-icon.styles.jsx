@@ -23,8 +23,9 @@ export const CartIconContainer = styled.div`
 `;
 
 export const ItemCountContainer = styled.span`
+  color: hsl(209, 34%, 30%);
   position: absolute;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  bottom: 12px;
+  bottom: 10px;
 `;
