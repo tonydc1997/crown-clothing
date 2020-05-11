@@ -45,7 +45,7 @@ const getButtonStyles = props => {
 
 const CustomButtonContainer = styled.button`
   border-radius: 4px;
-  box-shadow: 0 1px 3px hsla(0, 0%, 0% 0.2);
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
   cursor: pointer;
   display: flex;
   font-size: 15px;

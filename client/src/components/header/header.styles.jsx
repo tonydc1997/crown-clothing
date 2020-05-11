@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -20,50 +21,38 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  text-align: center;
-  height: 58%;
-  left: 3.5rem;
-  top: 0.5rem;
+  height: 100%;
+  left: 68px;
   width: 70px;
+  padding: 4px 0;
   position: relative;
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: hsl(209, 34%, 30%);
-    transform: scaleY(0);
-    transition: transform 0.5s ease;
-  }
-
-  &::before {
-    left: -8px;
-    transform-origin: center top;
+    left: 37.5%;
+    bottom: 16px;
+    width: 70%;
+    height: 2px;
+    background-color: hsl(211, 39%, 23%);
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
   }
 
   &:hover::before {
-    transform-origin: center bottom;
-    transform: scaleY(1);
-  }
-
-  &::after {
-    right: -8px;
-    transform-origin: center bottom;
-  }
-
-  &:hover::after {
-    transform-origin: center top;
-    transform: scaleY(1);
+    transform: translate(-50%, 0) scaleX(1);
   }
 
   @media screen and (max-width: 800px) {
-    left: 1rem;
+    left: 12px;
     top: 0;
     width: 50px;
     height: 100%;
+
+    &::before {
+      top: 50px;
+    }
   }
 `;
 
@@ -72,7 +61,7 @@ export const OptionsContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 4px;
+  margin-top: 6px;
   justify-content: flex-end;
 
   @media screen and (max-width: 800px) {
@@ -98,36 +87,23 @@ export const OptionLink = styled(Link)`
     font-size: 16px;
   }
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
+    top: 4px;
+    left: 50%;
+    width: 70%;
     height: 2px;
+    opacity: 0;
     background-color: hsl(209, 34%, 30%);
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-
-  &::before {
-    top: 0;
-    transform-origin: center right;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover::before {
-    transform-origin: center left;
-    transform: scaleX(1);
-  }
-
-  &::after {
-    bottom: 0;
-    transform-origin: center left;
-  }
-
-  &:hover::after {
-    transform-origin: center right;
-    transform: scaleX(1);
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
   }
 
   &:hover {

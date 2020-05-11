@@ -4,12 +4,13 @@ export const SignInContainer = styled.div`
   background-color: white;
   border-radius: 4px;
   border: 1px solid hsl(212, 33%, 89%);
-  /* box-shadow: 0 4px 6px hsla(0, 0%, 0% 0.7), 0 15px 35px hsla(0, 0%, 0% 0.2); */
+  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1), 0 10px 20px hsla(0, 0%, 0%, 0.15);
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
   padding: 32px 48px;
   width: 448px;
+  margin-bottom: 14rem;
 
   @media screen and (max-width: 520px) {
     width: 90%;
