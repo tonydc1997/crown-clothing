@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -20,18 +21,17 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  text-align: center;
-  height: 58%;
-  left: 3.5rem;
-  top: 0.5rem;
+  height: 100%;
+  left: 68px;
   width: 70px;
+  padding: 4px 0;
   position: relative;
 
   &::before {
     content: '';
     position: absolute;
-    left: 50.5%;
-    bottom: -8px;
+    left: 37.5%;
+    bottom: 16px;
     width: 70%;
     height: 2px;
     background-color: hsl(211, 39%, 23%);
@@ -45,10 +45,14 @@ export const LogoContainer = styled(Link)`
   }
 
   @media screen and (max-width: 800px) {
-    left: 1rem;
+    left: 12px;
     top: 0;
     width: 50px;
     height: 100%;
+
+    &::before {
+      top: 50px;
+    }
   }
 `;
 
@@ -57,7 +61,7 @@ export const OptionsContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 4px;
+  margin-top: 6px;
   justify-content: flex-end;
 
   @media screen and (max-width: 800px) {
