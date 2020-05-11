@@ -27,36 +27,21 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   position: relative;
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: hsl(209, 34%, 30%);
-    transform: scaleY(0);
-    transition: transform 0.5s ease;
-  }
-
-  &::before {
-    left: -8px;
-    transform-origin: center top;
+    left: 50.5%;
+    bottom: -8px;
+    width: 70%;
+    height: 2px;
+    background-color: hsl(211, 39%, 23%);
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
   }
 
   &:hover::before {
-    transform-origin: center bottom;
-    transform: scaleY(1);
-  }
-
-  &::after {
-    right: -8px;
-    transform-origin: center bottom;
-  }
-
-  &:hover::after {
-    transform-origin: center top;
-    transform: scaleY(1);
+    transform: translate(-50%, 0) scaleX(1);
   }
 
   @media screen and (max-width: 800px) {
@@ -98,36 +83,23 @@ export const OptionLink = styled(Link)`
     font-size: 16px;
   }
 
-  &::before,
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
+    top: 4px;
+    left: 50%;
+    width: 70%;
     height: 2px;
+    opacity: 0;
     background-color: hsl(209, 34%, 30%);
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-
-  &::before {
-    top: 0;
-    transform-origin: center right;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover::before {
-    transform-origin: center left;
-    transform: scaleX(1);
-  }
-
-  &::after {
-    bottom: 0;
-    transform-origin: center left;
-  }
-
-  &:hover::after {
-    transform-origin: center right;
-    transform: scaleX(1);
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
   }
 
   &:hover {
