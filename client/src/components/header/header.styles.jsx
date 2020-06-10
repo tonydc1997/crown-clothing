@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
   background: hsl(210, 36%, 99%);
@@ -70,27 +70,19 @@ export const OptionsContainer = styled.div`
   }
 `;
 
-export const OptionLink = styled(Link)`
-  color: hsl(209, 34%, 30%);
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 1rem;
-  padding: 10px 15px;
-  position: relative;
+export const OptionLink = styled(NavLink)`
   cursor: pointer;
-
-  @media screen and (max-width: 400px) {
-    font-size: 15px;
-  }
-
-  @media screen and (min-width: 401px) and (max-width: 800px) {
-    font-size: 16px;
-  }
+  color: hsl(210, 22%, 49%);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 24px 16px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
+    top: 16px;
     left: 50%;
     width: 70%;
     height: 2px;
@@ -101,12 +93,14 @@ export const OptionLink = styled(Link)`
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover::before {
-    transform: translate(-50%, 0) scaleX(1);
-    opacity: 1;
+  &:hover,
+  &.selected-overline {
+    color: hsl(211, 39%, 23%);
   }
 
-  &:hover {
-    color: hsl(211, 39%, 23%);
+  &:hover::before,
+  &.selected-overline::before {
+    transform: translate(-50%, 0) scaleX(1);
+    opacity: 1;
   }
 `;

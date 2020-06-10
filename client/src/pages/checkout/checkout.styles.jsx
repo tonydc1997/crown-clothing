@@ -71,3 +71,12 @@ export const TestCardMessage = styled.span`
     font-size: 18px;
   }
 `;
+
+export const ButtonContainer = styled.div`
+  align-self: flex-end;
+  margin-top: 50px;
+
+  @media screen and (max-width: 450px) {
+    align-self: unset;
+  }
+`;
