@@ -17,6 +17,7 @@ import {
   TestCardWarning,
   TestCardTitle,
   TestCardMessage,
+  ButtonContainer,
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
@@ -42,7 +43,9 @@ const CheckoutPage = ({ cartItems, total }) => (
         123
       </TestCardMessage>
     </TestCardWarning>
-    <StripeCheckoutButton price={total} />
+    <ButtonContainer>
+      <StripeCheckoutButton price={total} />
+    </ButtonContainer>
   </CheckoutPageContainer>
 );
 
