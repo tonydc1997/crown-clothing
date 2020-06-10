@@ -20,13 +20,21 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink to="/shop">Shop</OptionLink>
+      <OptionLink to="/shop" activeClassName="selected-overline">
+        Shop
+      </OptionLink>
       {currentUser ? (
-        <OptionLink as="div" onClick={signOutStart}>
+        <OptionLink
+          as="div"
+          activeClassName="selected-overline"
+          onClick={signOutStart}
+        >
           Sign Out
         </OptionLink>
       ) : (
-        <OptionLink to="/signin">Sign In</OptionLink>
+        <OptionLink to="/signin" activeClassName="selected-overline">
+          Sign In
+        </OptionLink>
       )}
       <CartIcon />
     </OptionsContainer>
